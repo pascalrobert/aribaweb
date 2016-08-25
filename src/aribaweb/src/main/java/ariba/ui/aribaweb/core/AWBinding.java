@@ -37,6 +37,7 @@ import ariba.util.core.Fmt;
 import ariba.util.core.MapUtil;
 import ariba.util.core.ResourceService;
 import ariba.util.core.StringUtil;
+import ariba.util.expr.AribaExprEvaluator;
 import ariba.util.fieldvalue.Expression;
 import ariba.util.fieldvalue.FieldPath;
 import ariba.util.fieldvalue.FieldValue;

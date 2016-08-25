@@ -21,6 +21,7 @@ import java.io.OutputStream;
 import java.io.PrintWriter;
 
 import javax.servlet.ServletOutputStream;
+import javax.servlet.WriteListener;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpServletResponseWrapper;
 
@@ -167,6 +168,18 @@ public final class AWRecordingServletResponse extends HttpServletResponseWrapper
         {
             _original.flush();
             _recording.flush();
+        }
+
+        @Override
+        public boolean isReady() {
+          // TODO Auto-generated method stub
+          return false;
+        }
+
+        @Override
+        public void setWriteListener(WriteListener writeListener) {
+          // TODO Auto-generated method stub
+          
         }
     }
 }

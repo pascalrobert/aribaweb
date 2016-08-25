@@ -79,8 +79,8 @@ import ariba.util.i18n.I18NUtil;
 import ariba.util.i18n.MergedStringLocalizer;
 import ariba.util.io.CSVConsumer;
 
-import com.itextpdf.text.DocumentException;
-import com.itextpdf.text.pdf.BaseFont;
+import com.lowagie.text.DocumentException;
+import com.lowagie.text.pdf.BaseFont;
 
 public final class AWUtil extends AWBaseObject
 {
@@ -2563,7 +2563,6 @@ public final class AWUtil extends AWBaseObject
         try
         {
             Tidy tidy = new Tidy();
-            tidy.setCharEncoding(Configuration.UTF8);
             tidy.setXHTML(true);
             tidy.setShowWarnings(false);
 
